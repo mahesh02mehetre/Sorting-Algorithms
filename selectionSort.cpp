@@ -31,19 +31,22 @@ void selectionSort(vector<int> &v){
 }
 
 int main(){
-    vector<int> v;
     int s;
+    vector<int> vec;
     cout<<"Enter number of array elements"<<endl;
     cin>>s;
     int num;
+    cout<<"Enter array elements:"<<endl;
     for(int i=0; i<s;i++){
         cin>>num;
-        v.push_back(num);
+        vec.push_back(num);
     }
     cout<<endl;
-    selectionSort(v);
+
+    cout<<"Sorted array elements:"<<endl;  
+    selectionSort(vec);
     // swap(num, s);
-    for(auto i:v){
+    for(auto i:vec){
         cout<<i<<" ";
     }
     cout<<endl;

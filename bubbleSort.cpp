@@ -29,18 +29,20 @@ void bubbleSort(vector<int> &v){
 int main()
 {
     int s;
-    vector<int> v;
+    vector<int> vec;
     cout<<"Enter number of array elements"<<endl;
     cin>>s;
     int num;
+    cout<<"Enter array elements:"<<endl;
     for(int i=0; i<s;i++){
         cin>>num;
-        v.push_back(num);
+        vec.push_back(num);
     }
     cout<<endl;
 
-    bubbleSort(v);
-    for(auto i:v){
+    cout<<"Sorted array elements:"<<endl;  
+    bubbleSort(vec);
+    for(auto i : vec){
         cout<<i<<" ";
     }
     cout<<endl;
